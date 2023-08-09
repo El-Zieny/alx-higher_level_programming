@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 os.environ.get('$PYFILE')
+python3 $PYFILE
