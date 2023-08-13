@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 def add_tuple(a=(), b=()):
-
-#    if not len(a):
-#        return b
-#    if not len(b):
-#        return a
+    if not len(a) and not len(b):
+        return (0, 0)
+    if not len(a):
+        return b
+    if not len(b):
+        return a
     if len(a) == 1 and len(b) == 1:
         return (a[0] + b[0], 0)
     if len(a) == 1 and len(b) == 2:
