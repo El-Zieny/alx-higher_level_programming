@@ -1,3 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    return [replace if x is search else x for x in my_list]
+    new = [i if i is not search else replace for i in my_list]
+    return new
