@@ -8,6 +8,6 @@ def fizzbuzz():
         elif t == 0:
             print("Fizz", end=" ")
         elif f == 0:
-            print("Buzz", end="")
+            print("Buzz", end=" ")
         else:
             print(i, end=" ")
