@@ -4,7 +4,7 @@ This module creates an emty class Square
 """
 
 
-class square:
+class Square:
     """
     An empty class named Square
     """
