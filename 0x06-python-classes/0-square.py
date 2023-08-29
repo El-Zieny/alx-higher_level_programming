@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""Square file"""
+"""
+This module creates an emty class Square
+"""
 
 
 class square:
-    """Square class"""
+    """
+    An empty class named Square
+    """
     pass
