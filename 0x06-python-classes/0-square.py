@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""square file"""
+"""Square file"""
 
 
 class square:
-    """square class"""
+    """Square class"""
     pass
