@@ -5,12 +5,12 @@ def list_division(list1, list2, length):
         a = 0
         try:
             a = list1[x] / list2[x]
-        except IndexError:
-            print("out of range")
         except ZeroDivisionError:
             print("division by 0")
         except TypeError:
             print("wrong type")
+        except IndexError:
+            print("out of range")
         finally:
           new.append(a)
     return new
