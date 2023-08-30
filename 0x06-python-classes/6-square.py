@@ -5,20 +5,25 @@
 class Square:
     """Square class"""
 
-    def __init__(self, s, po=(0, 0)):
-        """class constructor"""
+    def __init__(self, s, position=(0, 0)):
+        """
+        Args:
+            self: refer to itself
+            size (int): size of square
+            po (tuple): tuple of two ontegers as cordinate
+        """
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
             raise ValueError('size must be >= 0')
         self.__size = s
-        if type(po) is not tuple or len(po) != 2:
+        if type(position) is not tuple or len(position) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
-        if type(po[0]) is not int or type(po[1]) is not int:
+        if type(position[0]) is not int or type(position[1]) is not int:
             raise TypeError('position must be a tuple of 2 positive integers')
-        if po[0] < 0 or po[1] < 0:
+        if position[0] < 0 or position[1] < 0:
             raise TypeError('position must be a tuple of 2 positive integers')
-        self.__position = po
+        self.__position = position
 
     def area(self):
         """square area"""
