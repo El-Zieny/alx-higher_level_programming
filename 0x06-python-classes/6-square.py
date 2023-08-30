@@ -4,7 +4,6 @@
 
 class Square:
     """Square class"""
-
     def __init__(self, s, po = (0, 0)):
         """class instructor"""
         if type(s) is not int:
