@@ -7,6 +7,7 @@ class Square:
 
     def __init__(self, s, po=(0, 0)):
         """class instructor"""
+
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
