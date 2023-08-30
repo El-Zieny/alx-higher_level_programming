@@ -5,13 +5,8 @@
 class Square:
     """Square class"""
 
-    def __init__(self, s, po=(0, 0)):
-        """
-        class instructor
-
-        Args:
-            __size (int): size of square
-        """
+    def __init__(self, s, po = (0, 0)):
+        """class instructor"""
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
@@ -62,7 +57,7 @@ class Square:
             print()
         for x in range(self.__size):
             for b in range(self.__position[0]):
-                print(" ", end="")
+                print(" ", end = "")
             for z in range(self.__size):
-                print("#", end="")
+                print("#", end = "")
             print()
