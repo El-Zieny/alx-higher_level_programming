@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""class file"""
+"""Square class file"""
 
 
 class Square:
@@ -22,7 +22,7 @@ class Square:
 
     def area(self):
         """square area"""
-        return self.__size ** 2
+        return self.__size * self.__size
 
     @property
     def size(self):
