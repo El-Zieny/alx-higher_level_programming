@@ -6,7 +6,6 @@ class Square:
     """Square class"""
 
     def __init__(self, s, po=(0, 0)):
-    """class constructor"""
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
