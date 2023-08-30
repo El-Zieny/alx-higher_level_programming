@@ -6,6 +6,7 @@ class Square:
     """Square class"""
 
     def __init__(self, s, po=(0, 0)):
+        """class constructor"""
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
@@ -20,14 +21,17 @@ class Square:
         self.__position = po
 
     def area(self):
+        """square area"""
         return self.__size ** 2
 
     @property
     def size(self):
+        """size getter"""
         return self.__size
 
     @size.setter
     def size(self, s):
+        """"size setter"""
         if type(s) is not int:
             raise TypeError('size must be an integer')
         if s < 0:
@@ -36,10 +40,12 @@ class Square:
 
     @property
     def position(self):
+        """position getter"""
         return self.__position
 
     @position.setter
     def position(self, p):
+        """position setter"""
         if type(p) is not tuple or len(p) != 2: 
             raise TypeError('position must be a tuple of 2 positive integers')
         if type(p[0]) is not int or type(p[1]) is not int:         
@@ -49,6 +55,7 @@ class Square:
         self.__position = p
 
     def my_print(self):
+        """print current square with # taking position"""
         if self.__size == 0:
             print()
             return
