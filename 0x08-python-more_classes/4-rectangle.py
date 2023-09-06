@@ -57,7 +57,8 @@ class Rectangle:
         for x in range(self.__height):
             for z in range(self.__width):
                 res += "#"
-            res += "\n"
+            if x != self.__height - 1:
+                res += "\n"
         return res
 
     def __repr__(self):
