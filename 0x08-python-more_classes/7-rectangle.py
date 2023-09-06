@@ -59,7 +59,7 @@ class Rectangle:
             return res
         for x in range(self.__height):
             for z in range(self.__width):
-                res += Rectangle.print_symbol
+                res += str(self.print_symbol)
             res += "\n"
         return res
 
