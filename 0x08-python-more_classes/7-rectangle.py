@@ -6,6 +6,7 @@ class Rectangle:
     """rectangle class"""
     print_symbol = "#"
     number_of_instances = 0
+
     def __init__(self, w=0, h=0):
         if type(w) is not int:
             raise TypeError("width must be an integer")
@@ -60,7 +61,8 @@ class Rectangle:
         for x in range(self.__height):
             for z in range(self.__width):
                 res += str(self.print_symbol)
-            res += "\n"
+            if x != self.__height - 1:
+                res += "\n"
         return res
 
     def __repr__(self):
