@@ -1,7 +1,15 @@
 #!/usr/bin/python3
+"""
+add two integers module
+if error accure raise it
+if a or b it's int casted
+"""
+
+
 def add_integer(a, b=98):
     """
     adds integers
+    return a + b
     """
     if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
