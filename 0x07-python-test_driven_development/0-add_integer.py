@@ -7,8 +7,7 @@ if a or b it's int casted
 
 
 def add_integer(a, b=98):
-    """
-    adds integers
+    """adds integers
     return a + b
     """
     if type(a) is not int and type(a) is not float:
