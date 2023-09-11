@@ -2,6 +2,8 @@
 """
 lookup module
 """
+
+
 def lookup(obj):
     """
     return dir(obj)
