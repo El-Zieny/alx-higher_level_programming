@@ -48,3 +48,6 @@
     [2, 2, -2, -32, 23]
     >>> my_list.print_sorted()
     [-32, -2, 2, 2, 23]
+    >>> doc = __import__("1-my_list").__doc__
+    >>> len(doc) > 0
+    True
