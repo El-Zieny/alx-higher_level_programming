@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-list sorting module
-"""
+"""list sorting module"""
 
 
 class MyList(list):
@@ -11,6 +9,8 @@ class MyList(list):
 
     def print_sorted(self):
         """
-        returns the list sorted
+        prints the list sorted
+        :return:
+        :rtype:
         """
         print(sorted(self))
