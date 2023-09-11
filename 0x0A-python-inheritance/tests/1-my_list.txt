@@ -38,3 +38,13 @@
           File "/home/zenwa/ALX/main/alx-higher_level_programming/0x0A-python-inheritance/1-my_list.py", line 12, in print_sorted
         print(sorted(self))
     TypeError: '<' not supported between instances of 'int' and 'str'
+    >>> my_list = MyList()
+    >>> my_list.append(2)
+    >>> my_list.append(2)
+    >>> my_list.append(-2)
+    >>> my_list.append(-32)
+    >>> my_list.append(23)
+    >>> print(my_list)
+    [2, 2, -2, -32, 23]
+    >>> my_list.print_sorted()
+    [-32, -2, 2, 2, 23]
