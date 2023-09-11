@@ -51,3 +51,9 @@
     >>> doc = __import__("1-my_list").__doc__
     >>> len(doc) > 0
     True
+    >>> doc = __import__("1-my_list").MyList.__doc__
+    >>> len(doc) > 0
+    True
+    >>> doc = __import__("1-my_list").MyList.print_sorted.__doc__
+    >>> len(doc) > 0
+    True
