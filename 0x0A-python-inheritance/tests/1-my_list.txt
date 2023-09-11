@@ -21,3 +21,8 @@
     ['hello', 'betty', 'zieny', 'inferno', 'dragon']
     >>> my_list.print_sorted()
     ['betty', 'dragon', 'hello', 'inferno', 'zieny']
+    >>> my_list = MyList()
+    >>> print(my_list)
+    []
+    >>> my_list.print_sorted()
+    []
