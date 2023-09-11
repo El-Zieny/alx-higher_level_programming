@@ -11,3 +11,13 @@
     [1, 2, 5, 3, 7, 4, 6]
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5, 6, 7]
+    >>> my_list = MyList()
+    >>> my_list.append("hello")
+    >>> my_list.append("betty")
+    >>> my_list.append("zieny")
+    >>> my_list.append("inferno")
+    >>> my_list.append("dragon")
+    >>> print(my_list)
+    ['hello', 'betty', 'zieny', 'inferno', 'dragon']
+    >>> my_list.print_sorted()
+    ['betty', 'dragon', 'hello', 'inferno', 'zieny']
