@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""module to open, read, and writ the content of a file"""
+"""read_file module"""
 
 
 def read_file(filename=""):
     """
-    function to print the content of a file to stdout
+    function to print the content of a filename to stdout
     :param filename:
     :type filename:
     :return:
