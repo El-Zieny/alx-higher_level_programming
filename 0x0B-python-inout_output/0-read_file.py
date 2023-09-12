@@ -3,6 +3,9 @@
 
 
 def read_file(filename=""):
-    """function to print the content of a file to stdout"""
+    """
+    function to print the content of a file to stdout
+    :param filename:
+    """
     with open(filename, encoding="utf-8") as file:
         print(file.read(), end="")
