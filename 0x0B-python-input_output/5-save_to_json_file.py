@@ -3,7 +3,11 @@
 
 
 def save_to_json_file(my_obj, filename):
-    """save_to_json_file function"""
+    """
+    save_to_json_file function
+    :return: string
+    :rtype: str
+    """
     with open(filename, "w") as j:
         from json import dump
         dump(my_obj, j)
