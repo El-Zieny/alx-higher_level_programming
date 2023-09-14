@@ -8,6 +8,6 @@ def save_to_json_file(my_obj, filename):
     :return: string
     :rtype: str
     """
-    with open(file=filename, mode='w') as j:
+    with open(file=filename, mode='w') as file:
         from json import dump
-        dump(my_obj, j)
+        dump(my_obj, file)
