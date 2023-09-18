@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""base lass module"""
+"""base class module"""
 from json import dumps, loads
+
 
 class Base:
     """Base class"""
     __nb_objects = 0
+
     def __init__(self, ide=None):
         if ide is None:
             Base.__nb_objects += 1
