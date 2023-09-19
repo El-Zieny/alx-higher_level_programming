@@ -56,7 +56,7 @@ class TestBase(TestCase):
     def test_base_id_input(self):
         """tests for id input"""
         self.assertEqual(b.Base(89).id, 89)
-        self.assertEqual(b.Base(-89).id, 89)
+        self.assertEqual(b.Base(-89).id, -89)
         self.assertEqual(b.Base(0).id, 0)
 
 """
