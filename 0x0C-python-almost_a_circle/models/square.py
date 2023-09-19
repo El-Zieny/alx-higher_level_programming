@@ -2,6 +2,7 @@
 """square class module"""
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """Square class"""
     def __init__(self, size, x=0, y=0, ide=None):
@@ -38,7 +39,7 @@ class Square(Rectangle):
         if args is not None and len(args) > 0:
             keys = ['id', 'size', 'x', 'y']
             for key, arg in zip(keys, args):
-                    setattr(self, key, arg)
+                setattr(self, key, arg)
         elif kwargs is not None and len(kwargs) > 0:
             for key, arg in kwargs.items():
                 if hasattr(self, key):
