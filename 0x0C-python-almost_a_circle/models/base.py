@@ -62,4 +62,3 @@ class Base:
                 return inst
         except FileNotFoundError:
             return []
-
