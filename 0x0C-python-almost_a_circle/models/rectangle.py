@@ -107,7 +107,7 @@ class Rectangle(Base):
         ide = f"({self.id}) "
         x_y = f"{self.__x}/{self.__y} "
         sep = "- "
-        w_h = f"{self.__width}/{self.__height} "
+        w_h = f"{self.__width}/{self.__height}"
 
         return name + ide + x_y + sep + w_h
 
