@@ -5,9 +5,11 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """Square class"""
     def __init__(self, size, x=0, y=0, ide=None):
+        """class constructor"""
        super().__init__(size, size, x, y, ide)
 
     def __str__(self):
+        """overwriting the str func"""
         name = f"[{self.__class__.__name__}] "
         ide = f"({self.id}) "
         x_y = f"{self.x}/{self.y} "
@@ -18,10 +20,12 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """size getter"""
         return self.width
 
     @size.setter
     def size(self, val):
+        """size setter"""
         if type(val) is not int:
             raise TypeError("width must be an integer")
         if val <= 0:
@@ -30,6 +34,7 @@ class Square(Rectangle):
         self.height = val
 
     def update(self, *args, **kwargs):
+        """a function to update an existing Square"""
         if args is not None and len(args) > 0:
             keys = ['id', 'size', 'x', 'y']
             for key, arg in zip(keys, args):
@@ -40,6 +45,7 @@ class Square(Rectangle):
                     setattr(self, key, arg)
 
     def to_dictionary(self):
+        """a function that returns a class dictionary"""
         class_dict = {}
         attributes = ['id', 'size', 'x', 'y']
         for attribute in attributes:
