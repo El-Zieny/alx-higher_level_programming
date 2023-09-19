@@ -27,7 +27,7 @@ class TestBase(TestCase):
         """test for the to string doc"""
         self.assertIsNotNone(b.Base.to_json_string.__doc__)
         self.assertGreater(len(b.Base.to_json_string.__doc__), 0)
-    
+
     def setUp(self):
         """resets counter and create a tepmorary directory for test files"""
         b.Base._Base__nb_object = 0
@@ -52,6 +52,8 @@ class TestBase(TestCase):
     def test_id_true(self):
         """tests id boolean"""
         self.assertEqual(b.Base(True).id, True)
+
+
 """
     def test_init(self):
         self.b1 = Base()
