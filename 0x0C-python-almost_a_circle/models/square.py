@@ -6,7 +6,7 @@ class Square(Rectangle):
     """Square class"""
     def __init__(self, size, x=0, y=0, ide=None):
         """class constructor"""
-       super().__init__(size, size, x, y, ide)
+        super().__init__(size, size, x, y, ide)
 
     def __str__(self):
         """overwriting the str func"""
