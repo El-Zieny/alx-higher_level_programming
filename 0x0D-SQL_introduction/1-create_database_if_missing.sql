@@ -1,0 +1,2 @@
+-- a script that creates a database hbtn_0c_0 in MYSQL server if not exist
+CREATE DATABASE IF NOT EXIST hbtn_0c_0;
