@@ -1,2 +1,5 @@
 #!/usr/bin/node
-console.log('X' * 3);
+function add(a, b) {
+    return a + b;
+}
+console.log(add(a, 2));
