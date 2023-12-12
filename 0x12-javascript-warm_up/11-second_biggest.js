@@ -10,5 +10,10 @@ if (argv.length < 4) {
   }
   array = array.sort();
   array = array.reverse();
+  for (i = 0; i < array.length; i++) {
+    if (array[0] == array[1]) {
+      array.shift();
+    }
+  }
   console.log(array[1]);
 }
